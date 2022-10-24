@@ -1,0 +1,82 @@
+.goods_block_category__cards_card {
+    background: $white;
+    border: 1px solid rgba(65, 34, 111, 0.05);
+    box-shadow: 2px 2px 1px rgba(65, 34, 111, 0.03);
+    width: 470px;
+    min-height: 440px;
+}
+
+.card_goods {
+    padding: 24px 16px 24px 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    grid-template-areas: "img order"
+        "description description";
+
+    &__img {
+        max-width: 240px;
+        max-height: 240px;
+        grid-area: img;
+    }
+
+    &__description {
+        grid-area: description;
+        max-width: 360px;
+        margin-top: 16px;
+
+        &_head {
+            color: $lightGreen;
+        }
+
+        &_text {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 17px;
+            color: $black;
+        }
+    }
+
+    &__order {
+        grid-area: order;
+        width: 200px;
+        margin-left: 14px;
+        padding-top: 24px;
+
+        &_price {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            color: $black;
+        }
+
+        &_price,
+        &_count {
+            margin-bottom: 28px;
+        }
+
+        &_count>input {
+            width: 48px;
+            margin-left: 4px;
+            padding-left: 8px;
+        }
+
+        &_totalCost {
+            margin-bottom: 40px;
+        }
+
+        &_btn {
+            font-family: inherit;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: $white;
+            background-color: $lightGreen;
+            padding: 7px 16.8px;
+            border: none;
+            border-radius: 17px;
+            box-shadow: -4px -4px 30px rgba(65, 34, 111, 0.15), 4px 4px 30px rgba(65, 34, 111, 0.15);
+        }
+    }
+}

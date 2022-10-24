@@ -1,0 +1,53 @@
+@import "_fonts.scss";
+@import "_colors.scss";
+@import "_card.scss";
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.main_baner {
+    width: 100%;
+    height: 564px;
+    background-image: url(image/main.jpg);
+    display: flex;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main {
+    &_head {
+        color: $white;
+    }
+}
+
+section {
+    margin-top: 102px;
+}
+
+.category_fruit {
+    margin-top: 60px;
+}
+
+.category_vegetables {
+    margin-top: 100px;
+}
+
+.goods_block_category {
+    &__head {
+        color: $black;
+        margin-bottom: 48px;
+    }
+}
+
+.cards_block {
+    display: flex;
+}
+
+.card_goods + .card_goods {
+    margin-left: 30px;
+}
